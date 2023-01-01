@@ -1,7 +1,6 @@
-package com.zerobase.cms.main.domain.model;
+package com.zerobase.cms.user.domain.model;
 
-import com.zerobase.cms.main.domain.BaseEntity;
-import com.zerobase.cms.main.domain.SignUpForm;
+import com.zerobase.cms.user.domain.SignUpForm;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.Locale;
@@ -41,6 +40,9 @@ public class Customer extends BaseEntity {
     private LocalDateTime verifyExpiredAt;
     private String verificationCode;
     private boolean verify;
+
+    @Column(columnDefinition = "int default 0")
+    private Integer balance;
 
     public static Customer from(SignUpForm form){
         return Customer.builder()

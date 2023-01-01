@@ -1,8 +1,8 @@
 package com.zerobase.cms.domain.service;
 
 
-import com.zerobase.cms.main.client.MailgunClient;
-import com.zerobase.cms.main.client.mailgun.SendMailForm;
+import com.zerobase.cms.user.client.MailgunClient;
+import com.zerobase.cms.user.client.mailgun.SendMailForm;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 

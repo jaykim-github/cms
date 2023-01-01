@@ -1,4 +1,4 @@
-package com.zerobase.cms.main.domain;
+package com.zerobase.cms.user.domain;
 
 import java.time.LocalDate;
 import lombok.AllArgsConstructor;
